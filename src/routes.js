@@ -13,4 +13,8 @@ routes.post('/boxes/:id/files',
 
 routes.get('/boxes/:id', BoxController.show);
 
+routes.get('/', (req, res) => {
+    return res.send('ola');
+});
+
 module.exports = routes;
